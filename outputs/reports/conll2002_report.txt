@@ -1,0 +1,69 @@
+=== REPORTE DATASET CONLL2002 ===
+
+Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\conll2002
+
+
+--- Archivo: test.txt ---
+Oraciones: 1517
+Tokens: 51533
+Distribución de etiquetas:
+O         45355
+B-ORG      1400
+I-ORG      1104
+B-LOC      1084
+B-PER       735
+I-PER       634
+I-MISC      557
+B-MISC      339
+I-LOC       325
+
+Ejemplo primera oración:
+[('La', 'B-LOC'), ('Coruña', 'I-LOC'), (',', 'O'), ('23', 'O'), ('may', 'O'), ('(', 'O'), ('EFECOM', 'B-ORG'), (')', 'O'), ('.', 'O')]
+
+--- Archivo: train.txt ---
+Oraciones: 8323
+Tokens: 264715
+Distribución de etiquetas:
+O         231920
+B-ORG       7390
+I-ORG       4992
+B-LOC       4913
+B-PER       4321
+I-PER       3903
+I-MISC      3212
+B-MISC      2173
+I-LOC       1891
+
+Ejemplo primera oración:
+[('Melbourne', 'B-LOC'), ('(', 'O'), ('Australia', 'B-LOC'), (')', 'O'), (',', 'O'), ('25', 'O'), ('may', 'O'), ('(', 'O'), ('EFE', 'B-ORG'), (')', 'O'), ('.', 'O')]
+
+--- Archivo: valid.txt ---
+Oraciones: 1915
+Tokens: 52923
+Distribución de etiquetas:
+O         45356
+B-ORG      1700
+I-ORG      1366
+B-PER      1222
+B-LOC       984
+I-PER       859
+I-MISC      654
+B-MISC      445
+I-LOC       337
+
+Ejemplo primera oración:
+[('Sao', 'B-LOC'), ('Paulo', 'I-LOC'), ('(', 'O'), ('Brasil', 'B-LOC'), (')', 'O'), (',', 'O'), ('23', 'O'), ('may', 'O'), ('(', 'O'), ('EFECOM', 'B-ORG'), (')', 'O'), ('.', 'O')]
+
+=== RESUMEN GLOBAL ===
+Total oraciones: 11755
+Total tokens: 369171
+Distribución global de etiquetas:
+O         322631
+B-ORG      10490
+I-ORG       7462
+B-LOC       6981
+B-PER       6278
+I-PER       5396
+I-MISC      4423
+B-MISC      2957
+I-LOC       2553
