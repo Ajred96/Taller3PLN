@@ -1,0 +1,35 @@
+=== CORRECCIONES PUNTUALES DATASET PRÓSTATA ===
+
+Origen: D:\Universidad\LenguajeNatrual\Taller3\data\raw\prostata
+Destino: D:\Universidad\LenguajeNatrual\Taller3\data\processed\prostata
+
+
+--- Archivo: training.bio ---
+Línea 1773:
+Antes:   hormonal	I-TRATAMIENTO
+Después: hormonal	B-TRATAMIENTO
+
+Línea 15496:
+Antes:   años	I-FECHA
+Después: años	I-EDAD
+
+
+--- Archivo: validation_cleaned.bio ---
+Línea 1401:
+Antes:   .	,
+Después: .	O
+
+
+--- Archivo: testing_cleaned.bio ---
+Línea 4977:
+Antes:   8	I-DOSIS
+Después: 8	B-DOSIS
+
+Línea 12471:
+Antes:   HC	I-BIOMARCADOR
+Después: HC	B-BIOMARCADOR
+
+Línea 17566:
+Antes:   .	0
+Después: .	O
+

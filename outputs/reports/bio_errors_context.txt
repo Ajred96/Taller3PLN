@@ -1,0 +1,131 @@
+=== INSPECCIÓN CONTEXTUAL DE ERRORES BIO ===
+
+
+=== ERRORES BIO DETECTADOS: CONLL2002 ===
+
+--- Archivo: test.txt, línea objetivo: 9291 ---
+    9286: sobre SP O
+    9287: ' Fz B-MISC
+    9288: Cantidad NC I-MISC
+    9289: . Fp I-MISC
+    9290: 
+>>> 9291: Calidad NC I-MISC
+    9292: del SP I-MISC
+    9293: entrenamiento NC I-MISC
+    9294: de SP I-MISC
+    9295: los DA I-MISC
+    9296: jóvenes NC I-MISC
+
+--- Archivo: train.txt, línea objetivo: 221619 ---
+    221614: otras DI O
+    221615: ciudades NC O
+    221616: españolas AQ O
+    221617: . Fp B-LOC
+    221618: 
+>>> 221619: San AQ I-LOC
+    221620: Sebastián NC I-LOC
+    221621: , Fc O
+    221622: 23 Z O
+    221623: may NC O
+    221624: ( Fpa O
+
+--- Archivo: valid.txt, línea objetivo: 30882 ---
+    30877: ACNO NC B-ORG
+    30878: y CC O
+    30879: COI NC B-ORG
+    30880: . Fp B-LOC
+    30881: 
+>>> 30882: Río NC I-LOC
+    30883: de SP I-LOC
+    30884: Janeiro NC I-LOC
+    30885: ha VAI O
+    30886: solicitado VMP O
+    30887: los DA O
+
+
+=== ERRORES BIO DETECTADOS: PROSTATA ===
+
+--- Archivo: testing_cleaned.bio, línea objetivo: 4977 ---
+    4972: 8	B-DOSIS
+    4973: Gy	I-DOSIS
+    4974: en	O
+    4975: Monofracción	O
+    4976: de	O
+>>> 4977: 8	I-DOSIS
+    4978: Gy	I-DOSIS
+    4979: fraccion	O
+    4980: ,	O
+    4981: el	O
+    4982: tratamiento	O
+
+--- Archivo: testing_cleaned.bio, línea objetivo: 12471 ---
+    12466: previa	O
+    12467: PSAi	B-BIOMARCADOR
+    12468: no	I-BIOMARCADOR
+    12469: documentado	I-BIOMARCADOR
+    12470: en	O
+>>> 12471: HC	I-BIOMARCADOR
+    12472: previa	O
+    12473: ,	O
+    12474: TxNxM0	B-TNM
+    12475: Se	O
+    12476: desconoce	O
+
+--- Archivo: training.bio, línea objetivo: 1773 ---
+    1768: urología	O
+    1769: y	O
+    1770: oncología	O
+    1771: continua	O
+    1772: manejo	O
+>>> 1773: hormonal	I-TRATAMIENTO
+    1774: próxima	O
+    1775: aplicación	O
+    1776: en	O
+    1777: enero	B-FECHA
+    1778: 2	I-FECHA
+
+--- Archivo: training.bio, línea objetivo: 15496 ---
+    15491: 
+    15492: 
+    15493: Paciente	O
+    15494: de	O
+    15495: 78	B-EDAD
+>>> 15496: años	I-FECHA
+    15497: remitido	O
+    15498: con	O
+    15499: dx	O
+    15500: de	O
+    15501: adenocarcinoma	B-CANCER
+
+
+=== ETIQUETAS INVÁLIDAS DETECTADAS: PROSTATA ===
+
+--- Archivo: testing_cleaned.bio, etiqueta inválida: 0 ---
+
+Contexto línea 17566:
+    17561: extrainstitucional	O
+    17562: hasta	O
+    17563: octubre	B-FECHA
+    17564: de	I-FECHA
+    17565: 2021	I-FECHA
+>>> 17566: .	0
+    17567: 
+    17568: Con	O
+    17569: recaída	B-CANCER
+    17570: bioquímica	I-CANCER
+    17571: posterior	O
+
+--- Archivo: validation_cleaned.bio, etiqueta inválida: , ---
+
+Contexto línea 1401:
+    1396: .	O
+    1397: 
+    1398: REPORTE	O
+    1399: DE	O
+    1400: PATOLOGIA	O
+>>> 1401: .	,
+    1402: C780	O
+    1403: TUMOR	B-CANCER
+    1404: MALIGNO	I-CANCER
+    1405: SECUNDARIO	I-CANCER
+    1406: DEL	I-CANCER

@@ -1,0 +1,36 @@
+=== VALIDACIÓN BIO: PROSTATA ===
+
+Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\prostata
+
+
+--- Archivo: testing_cleaned.bio ---
+Líneas inválidas: 0
+Etiquetas inválidas: 1
+Errores de transición BIO: 2
+
+Detalle etiquetas inválidas:
+0: 1
+
+Primeros errores de transición BIO:
+Línea 4977: token='8', label='I-DOSIS', anterior='O', razón='I después de O'
+Línea 12471: token='HC', label='I-BIOMARCADOR', anterior='O', razón='I después de O'
+
+
+--- Archivo: training.bio ---
+Líneas inválidas: 0
+Etiquetas inválidas: 0
+Errores de transición BIO: 2
+
+Primeros errores de transición BIO:
+Línea 1773: token='hormonal', label='I-TRATAMIENTO', anterior='O', razón='I después de O'
+Línea 15496: token='años', label='I-FECHA', anterior='B-EDAD', razón='I con entidad diferente'
+
+
+--- Archivo: validation_cleaned.bio ---
+Líneas inválidas: 0
+Etiquetas inválidas: 1
+Errores de transición BIO: 0
+
+Detalle etiquetas inválidas:
+,: 1
+

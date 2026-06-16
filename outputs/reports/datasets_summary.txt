@@ -1,0 +1,36 @@
+=== RESUMEN GENERAL DE DATASETS ===
+
+
+--- tass_report.txt ---
+Filas: 4802
+Nombres de columnas: ['id', 'sentencia original', 'label']
+Filas: 2443
+Nombres de columnas: ['id', 'sentencia original', 'label']
+Total de filas leídas: 7245
+
+--- sarcasmo_report.txt ---
+Filas: 15276
+Nombres de columnas: ['Texto', 'Sarcasmo']
+Filas: 3820
+Nombres de columnas: ['Texto', 'Sarcasmo']
+Total de filas leídas: 19096
+
+--- conll2002_report.txt ---
+Oraciones: 1517
+Tokens: 51533
+Oraciones: 8323
+Tokens: 264715
+Oraciones: 1915
+Tokens: 52923
+Total oraciones: 11755
+Total tokens: 369171
+
+--- prostata_report.txt ---
+Oraciones: 991
+Tokens: 20862
+Oraciones: 3106
+Tokens: 67934
+Oraciones: 929
+Tokens: 16803
+Total oraciones: 5026
+Total tokens: 105599
