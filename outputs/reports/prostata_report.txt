@@ -1,6 +1,6 @@
 === REPORTE DATASET PROSTATA ===
 
-Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\prostata
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\prostata
 
 
 --- Archivo: testing_cleaned.bio ---
