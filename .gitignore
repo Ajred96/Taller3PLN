@@ -1,0 +1,16 @@
+.idea/
+notebooks/
+
+# Entorno virtual
+.venv/
+
+# Bytecode de Python
+__pycache__/
+*.pyc
+
+# Modelos entrenados de sarcasmo (archivos pesados: .safetensors, .pt, etc.)
+
+outputs/modelBetoSarcasmo/**
+!outputs/modelBetoSarcasmo/
+!outputs/modelBetoSarcasmo/*/
+!outputs/modelBetoSarcasmo/**/.gitkeep

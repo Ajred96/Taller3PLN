@@ -1,0 +1,46 @@
+=== REPORTE DATASET SARCASMO ===
+
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\sarcasmo
+
+
+--- Archivo: train.csv ---
+Filas: 15276
+Columnas: 2
+Nombres de columnas: ['Texto', 'Sarcasmo']
+
+Primeras 5 filas:
+                                                                       Texto  Sarcasmo
+0                   Así son las grabaciones que comprometen a Fernández Díaz         1
+1     Clan TV no sabe cómo preparar a los niños para la matanza de Peppa Pig         1
+2  Muelas de elefante y casuarios: así aprenden ecología alumnos de Estepona         0
+3            Qué bien, las discusiones solo fortalecen la relación, ¿verdad?         1
+4    Clásicos en Alcalá dedica este año a Cervantes parte de su programación         0
+
+Distribución de etiquetas usando columna 'Sarcasmo':
+Sarcasmo
+0    9162
+1    6114
+
+--- Archivo: validation.csv ---
+Filas: 3820
+Columnas: 2
+Nombres de columnas: ['Texto', 'Sarcasmo']
+
+Primeras 5 filas:
+                                                                                       Texto  Sarcasmo
+0  Roba el martell d’un jutge del Tribunal Suprem i indulta tots els presos independentistes         1
+1        Ya hay más reencuentros de «Operación Triunfo» que ediciones de «Operación Triunfo»         1
+2                                        Claro, todos llegarán a la hora acordada... seguro.         1
+3                Un policía, no tan chulito ahora que tiene que ponerse a dirigir el tráfico         1
+4             Rise of Ronin, el último videojuego de PS5, hace escala gastronómica en Málaga         0
+
+Distribución de etiquetas usando columna 'Sarcasmo':
+Sarcasmo
+0    2321
+1    1499
+
+=== RESUMEN GLOBAL ===
+Total de filas leídas: 19096
+Distribución global de etiquetas:
+0    11483
+1     7613
