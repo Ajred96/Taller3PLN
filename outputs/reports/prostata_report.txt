@@ -1,0 +1,121 @@
+=== REPORTE DATASET PROSTATA ===
+
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\prostata
+
+
+--- Archivo: testing_cleaned.bio ---
+Oraciones: 991
+Tokens: 20862
+Distribución de etiquetas:
+O                16622
+I-CANCER           647
+I-FECHA            478
+B-FECHA            401
+B-CANCER           364
+I-BIOMARCADOR      287
+I-GLEASON          262
+B-TRATAMIENTO      250
+I-DOSIS            239
+B-BIOMARCADOR      207
+B-DOSIS            188
+I-TRATAMIENTO      185
+B-MEDICAMENTO      164
+B-GLEASON          160
+B-TNM               93
+B-EDAD              80
+I-EDAD              79
+B-CIRUGIA           65
+I-CIRUGIA           65
+I-MEDICAMENTO       19
+I-TNM                6
+0                    1
+
+Ejemplo primera oración:
+[('Abril', 'B-FECHA'), ('8', 'I-FECHA'), ('de', 'I-FECHA'), ('2022', 'I-FECHA'), (',', 'O'), ('paciente', 'O'), ('con', 'O'), ('Tumor', 'B-CANCER'), ('maligno', 'I-CANCER'), ('de', 'I-CANCER'), ('la', 'I-CANCER'), ('próstata', 'I-CANCER'), (',', 'O'), ('ambulatorio', 'O'), ('en', 'O'), ('buena', 'O'), ('condición', 'O'), ('general', 'O'), ('con', 'O'), ('limitación', 'O')]
+
+--- Archivo: training.bio ---
+Oraciones: 3106
+Tokens: 67934
+Distribución de etiquetas:
+O                52701
+I-CANCER          2131
+I-FECHA           1365
+I-DOSIS           1264
+B-FECHA           1262
+B-CANCER          1207
+B-TRATAMIENTO     1130
+I-GLEASON          984
+B-BIOMARCADOR      895
+I-BIOMARCADOR      874
+B-DOSIS            785
+I-TRATAMIENTO      754
+B-GLEASON          598
+B-MEDICAMENTO      483
+B-TNM              355
+I-CIRUGIA          331
+B-CIRUGIA          254
+B-EDAD             246
+I-EDAD             240
+I-MEDICAMENTO       55
+I-TNM               20
+
+Ejemplo primera oración:
+[('Paciente', 'O'), ('de', 'O'), ('72', 'B-EDAD'), ('años', 'I-EDAD'), (',', 'O'), ('con', 'O'), ('antecedentes', 'O'), ('médicos', 'O'), ('de', 'O'), ('HTA', 'O'), ('.', 'O')]
+
+--- Archivo: validation_cleaned.bio ---
+Oraciones: 929
+Tokens: 16803
+Distribución de etiquetas:
+O                13576
+I-CANCER           519
+I-FECHA            411
+B-FECHA            319
+B-CANCER           296
+I-GLEASON          225
+B-BIOMARCADOR      197
+I-BIOMARCADOR      170
+B-TRATAMIENTO      158
+B-GLEASON          148
+I-DOSIS            110
+B-DOSIS            107
+I-TRATAMIENTO       94
+B-MEDICAMENTO       91
+B-TNM               89
+B-CIRUGIA           73
+I-CIRUGIA           71
+I-EDAD              67
+B-EDAD              67
+I-MEDICAMENTO        8
+I-TNM                6
+,                    1
+
+Ejemplo primera oración:
+[('Fecha', 'O'), ('13-11-2022', 'B-FECHA'), ('.', 'O')]
+
+=== RESUMEN GLOBAL ===
+Total oraciones: 5026
+Total tokens: 105599
+Distribución global de etiquetas:
+O                82899
+I-CANCER          3297
+I-FECHA           2254
+B-FECHA           1982
+B-CANCER          1867
+I-DOSIS           1613
+B-TRATAMIENTO     1538
+I-GLEASON         1471
+I-BIOMARCADOR     1331
+B-BIOMARCADOR     1299
+B-DOSIS           1080
+I-TRATAMIENTO     1033
+B-GLEASON          906
+B-MEDICAMENTO      738
+B-TNM              537
+I-CIRUGIA          467
+B-EDAD             393
+B-CIRUGIA          392
+I-EDAD             386
+I-MEDICAMENTO       82
+I-TNM               32
+0                    1
+,                    1

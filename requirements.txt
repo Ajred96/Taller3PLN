@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+nltk
+datasets
+transformers
+torch
+seqeval
+tqdm
+huggingface_hub

@@ -1,0 +1,49 @@
+=== REPORTE DATASET TASS ===
+
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\tass
+
+
+--- Archivo: cr-tass.csv ---
+Filas: 4802
+Columnas: 3
+Nombres de columnas: ['id', 'sentencia original', 'label']
+
+Primeras 5 filas:
+                   id                                                                                sentencia original label
+0  818942405281980417                                    No mames este pinche dolor que pedo? ya mejor llévame Diosito.     N
+1  818963123646373892                                 @leomall2018 Según yo era como aviso, pero ahora sí ya es oficial   NEU
+2  818998133694697472  @benshorts a juzgar por mis comportamientos autodestructivos en las relaciones, aún quiero serlo     N
+3  818822556090105857       #BuenosDias mundo Twittero ya desperté y estoy listo para vivir un dia mas #ExcelenteMartes     P
+4  818993011514372098                  No pude resolver el rompecabezas en Los rios de Alicia y ahora muero de tristeza     N
+
+Distribución de etiquetas usando columna 'label':
+label
+N      1885
+NEU    1523
+P      1394
+
+--- Archivo: cr1-tass.csv ---
+Filas: 2443
+Columnas: 3
+Nombres de columnas: ['id', 'sentencia original', 'label']
+
+Primeras 5 filas:
+                   id                                  sentencia original label
+0  815059714492878848                      Inteligente respuesta de Putin     P
+1  819399527715192833                       @FridaCoral ven a chetu mejor   NEU
+2  819383868704759808                   Danniel es como mi amor frustrado     N
+3  819320272423526400       #EsDeMexicanos dejar todo para el último día.     N
+4  819389873035608064  Estoy aprendiendo a hacer lo mismo, pero diferente     P
+
+Distribución de etiquetas usando columna 'label':
+label
+N      951
+NEU    793
+P      699
+
+=== RESUMEN GLOBAL ===
+Total de filas leídas: 7245
+Distribución global de etiquetas:
+N      2836
+NEU    2316
+P      2093
