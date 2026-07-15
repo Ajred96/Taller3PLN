@@ -7,7 +7,7 @@
 | Anderson Johan Alban Angulo    | Preprocesamiento y preparación de datasets |
 | Integrante 2                   | Clasificación de sentimientos (TASS) |
 | Cristian Camilo Llanos Alvarez | Detección de sarcasmo |
-| Integrante 4                   | NER CoNLL2002 |
+| Jhoan Felipe Leon                   | NER CoNLL2002 |
 | Integrante 5                   | NER Biomédico (Próstata) y evaluación |
 
 ---
