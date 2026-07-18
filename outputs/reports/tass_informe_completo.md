@@ -167,9 +167,26 @@ Ranking: XLM-R bs16 (67.30%) > BETO bs32 (66.81%) > XLNet bs8 (53.35%).
 | 7 | 5.1572 | 0.7147 | 0.6838 | 0.6814 | 0.6827 |
 | 8 | 5.0295 | 0.7143 | 0.6949 | 0.6891 | 0.6911 |
 
-### Métricas por clase (classification_report)
+### Métricas por clase (classification_report, test)
 
-_Pendiente: correr `classification_report` desde los modelos en HF (precision/recall/F1 para N, NEU, P). Script en `src/train/tass/README.md` / celda Colab entregada._
+Generado con `src/predict/tass/classification_report_tass.py` desde los modelos en HF.
+Detalle completo: `outputs/reports/tass_classification_report.txt`.
+
+| Modelo | Clase | Precision | Recall | F1 | Support |
+|---|---|---|---|---|---|
+| BETO | N | 0.7500 | 0.7066 | 0.7277 | 951 |
+| BETO | NEU | 0.5462 | 0.5662 | 0.5560 | 793 |
+| BETO | P | 0.7076 | 0.7339 | 0.7205 | 699 |
+| XLNet | N | 0.5890 | 0.6088 | 0.5988 | 951 |
+| XLNet | NEU | 0.4152 | 0.3859 | 0.4000 | 793 |
+| XLNet | P | 0.5781 | 0.5980 | 0.5879 | 699 |
+| XLM-R | N | 0.7397 | 0.7203 | 0.7299 | 951 |
+| XLM-R | NEU | 0.5502 | 0.5662 | 0.5581 | 793 |
+| XLM-R | P | 0.7290 | 0.7310 | 0.7300 | 699 |
+
+**Lectura:** la clase **NEU** es el cuello de botella (F1 ~0.55 en BETO/XLM-R, 0.40 en XLNet),
+mientras N y P se predicen bien (~0.72–0.73). NEU se solapa semánticamente con N y P → confirma
+la hipótesis del Punto 5 (la frontera difusa del neutro baja el F1 macro).
 
 ## Modelos publicados en Hugging Face
 
