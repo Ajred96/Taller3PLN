@@ -15,7 +15,7 @@ from pathlib import Path
 
 import numpy as np
 import evaluate
-from datasets import Dataset, DatasetDict
+from datasets import Dataset, DatasetDict, ClassLabel
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -61,6 +61,11 @@ def load_datasets():
 
     train_full = train_full.map(add_label_id)
     test = test.map(add_label_id)
+
+    # stratify_by_column exige tipo ClassLabel (no Value/int)
+    class_label = ClassLabel(names=LABELS)
+    train_full = train_full.cast_column("label_id", class_label)
+    test = test.cast_column("label_id", class_label)
 
     # Split estratificado 85/15 para crear validación (Early Stopping)
     splits = train_full.train_test_split(
