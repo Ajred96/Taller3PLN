@@ -5,7 +5,7 @@
 | Integrante | Responsabilidad |
 |--------------------------------|----------------|
 | Anderson Johan Alban Angulo | Preprocesamiento y preparación de datasets |
-| Integrante 2 | Clasificación de sentimientos (TASS) |
+| Gustavo Arango | Clasificación de sentimientos (TASS) |
 | Cristian Camilo Llanos Alvarez | Detección de sarcasmo |
 | Jhoan Felipe Leon | NER CoNLL2002 |
 | Juan Esteban Clavijo García | NER Biomédico (Próstata) y Prompt Engineering |
