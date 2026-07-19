@@ -448,3 +448,29 @@ pip install -r requirements.txt
 # Resultados
 
 
+
+
+## NER Biomédico — Próstata
+
+| Modelo | Batch | F1 | Precision | Recall |
+| ----------- | ----- | ---------- | ---------- | ---------- |
+| BETO | 8 | 0.9631 | 0.9598 | 0.9666 |
+| BETO | 16 | 0.9644 | 0.9617 | 0.9671 |
+| BETO | 32 | 0.9584 | 0.9534 | 0.9635 |
+| XLM-RoBERTa | 8 | 0.9621 | 0.9597 | 0.9645 |
+| XLM-RoBERTa | 16 | **0.9681** | **0.9667** | **0.9696** |
+| XLM-RoBERTa | 32 | 0.9542 | 0.9484 | 0.9600 |
+
+Modelos disponibles en: https://huggingface.co/JuanC513
+
+## NER CoNLL2002 — BiLSTM + CRF
+
+Se entrenaron dos variantes de BiLSTM+CRF sobre CoNLL2002: con FastText, y con FastText más un canal convolucional de caracteres (CNN). La variante con CNN obtuvo el mejor resultado.
+
+| Modelo | F1 | Precision | Recall |
+| ----------------------- | ------ | --------- | ------ |
+| Baseline (enunciado) | 0.6430 | - | - |
+| BiLSTM+CRF+FastText | 0.6809 | 0.7143 | 0.6505 |
+| BiLSTM+CRF+CNN+FastText | 0.7828 | 0.7768 | 0.7890 |
+
+La variante con CNN mejoró +13.98 puntos F1 sobre el baseline del enunciado. Por tipo de entidad, la mayor mejora se dio en MISC (+17.9 pts), seguida de ORG (+10.5 pts) y LOC (+9.0 pts).
