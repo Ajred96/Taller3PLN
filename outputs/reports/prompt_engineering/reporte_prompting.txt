@@ -1,0 +1,93 @@
+TALLER 3 — PROMPT ENGINEERING NER BIOMÉDICO
+============================================================
+
+Texto clínico:
+Paciente masculino de 72 años con antecedentes médicos de hipertensión arterial (HTA). Actualmente presenta un tumor prostático bilateral confirmado mediante biopsia. El diagnóstico histológico reveló un adenocarcinoma de próstata. El puntaje de Gleason reportado fue 3+3, lo que indica un cáncer de bajo grado. El PSA más alto registrado en la historia clínica fue de 9,9 ng/dL. La resonancia magnética no evidenció lesiones metastásicas ni afectación de la cápsula prostática. Las vesículas seminales se observaron normales en las imágenes por resonancia. No se detectaron adenopatías ni lesiones óseas sospechosas. La gammagrafía ósea fue negativa para metástasis. El cuadro clínico sugiere una neoplasia localizada de bajo riesgo.
+
+============================================================
+
+MODELO: MISTRAL
+----------------------------------------
+[{"ENTIDAD": "EDAD: 72 años"},
+ {"ENTIDAD": "CANCER: adenocarcinoma de próstata"},
+ {"ENTIDAD": "BIOMARCADOR: PSA: 9,9 ng/dL"},
+ {"ENTIDAD": "GLEASON: 3+3"},
+ {"ENTIDAD": "TRATAMIENTO: biopsia"},
+ {"ENTIDAD": "FECHA": "no especificada"}]
+
+MODELO: GEMMA
+----------------------------------------
+Aquí tienes las entidades biomédicas del texto clínico:
+
+- EDAD: 72 años
+- CANCER: adenocarcinoma de próstata
+- BIOMARCADOR: PSA
+- GLEASON: 3+3
+- MEDICAMENTO:  
+- CIRUGIA: 
+- DOSIS: 
+- TNM:  
+- FECHA:
+
+MODELO: LLAMA
+----------------------------------------
+Aquí te presento la lista de entidades biomédicas extraídas del texto clínico:
+
+* EDAD: 72 años
+* CANCER: cáncer de próstata
+* BIOMARCADOR: PSA (prostate-specific antigen)
+* GLEASON: 3+3
+* TRATAMIENTO: 
+* MEDICAMENTO: 
+* CIRUGIA: 
+* DOSIS: 
+* TNM: 
+* FECHA:
+
+MODELO: DEEPSEEK
+----------------------------------------
+Okay, I need to extract all the entities from the given text. Let me read through the text carefully.
+
+First, the text mentions a patient who is 72 years old with medical history. Then it talks about antecendentes médicos related to hypertension. The current condition is a prosthetic tumor bilateral, confirmed by biopsy. The histological diagnosis shows adenocarcinoma of prostata. The Gleason score is 3+3, indicating a low-grade cancer. The PSA level is 9.9 ng/dL. There's no mention of metastasis or other complications. The gamma scan is negative for metastasis. The clinical case report suggests a localized benign neoplasm of low risk.
+
+So, the entities I need to identify are:
+
+1. EDAD: The patient's age, which is 72 years.
+2. CANCER: The type of cancer, which is benign localized.
+3. BIOMARCADOR: The substance involved, which is PSA.
+4. GLEASON: The Gleason score, which is 3+3.
+5. TRATAMIENTO: Not mentioned.
+6. MEDICAMENTO: Not mentioned.
+7. CIRUGIA: Not mentioned.
+8. DOSIS: Not mentioned.
+9. TNM: Not mentioned.
+
+I think that's all the entities present in the text.
+</think>
+
+```json
+[
+    {
+        "ENTIDAD": "EDAD",
+        "TEXT ENCONTRADIENTE": "Paciente masculino de 72 años",
+    },
+    {
+        "ENTIDAD": "CANCER",
+        "TEXT ENCONTRADIENTE": "tumor prostático bilateral confirmado mediante biopsia",
+    },
+    {
+        "ENTIDAD": "BIOMARCADOR",
+        "TEXT ENCONTRADIENTE": "PSA",
+    },
+    {
+        "ENTIDAD": "GLEASON",
+        "TEXT ENCONTRADIENTE": "puntaje de Gleason reportado fue 3+3",
+    },
+    {
+        "ENTIDAD": "TRATAMIENTO",
+        "TEXT ENCONTRADIENTE": "No se detectaron adenopatías ni lesiones óseas sospechosas",
+    },
+    {
+        "ENTIDAD": "MEDICAMENTO",
+        "TEXT ENCONTRADIENTE": "No se detectaron adenopatías ni lesiones óseas sos
+
