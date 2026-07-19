@@ -2,13 +2,13 @@
 
 ## Integrantes
 
-| Integrante                     | Responsabilidad                               |
-| ------------------------------ | --------------------------------------------- |
-| Anderson Johan Alban Angulo    | Preprocesamiento y preparación de datasets    |
-| Integrante 2                   | Clasificación de sentimientos (TASS)          |
-| Cristian Camilo Llanos Alvarez | Detección de sarcasmo                         |
-| Integrante 4                   | NER CoNLL2002                                 |
-| Juan Esteban Clavijo García    | NER Biomédico (Próstata) y Prompt Engineering |
+| Integrante | Responsabilidad |
+|--------------------------------|----------------|
+| Anderson Johan Alban Angulo | Preprocesamiento y preparación de datasets |
+| Integrante 2 | Clasificación de sentimientos (TASS) |
+| Cristian Camilo Llanos Alvarez | Detección de sarcasmo |
+| Jhoan Felipe Leon | NER CoNLL2002 |
+| Juan Esteban Clavijo García | NER Biomédico (Próstata) y Prompt Engineering |
 
 ---
 
@@ -447,15 +447,4 @@ pip install -r requirements.txt
 
 # Resultados
 
-## NER Biomédico — Próstata
 
-| Modelo      | Batch | F1         | Precision  | Recall     |
-| ----------- | ----- | ---------- | ---------- | ---------- |
-| BETO        | 8     | 0.9631     | 0.9598     | 0.9666     |
-| BETO        | 16    | 0.9644     | 0.9617     | 0.9671     |
-| BETO        | 32    | 0.9584     | 0.9534     | 0.9635     |
-| XLM-RoBERTa | 8     | 0.9621     | 0.9597     | 0.9645     |
-| XLM-RoBERTa | 16    | **0.9681** | **0.9667** | **0.9696** |
-| XLM-RoBERTa | 32    | 0.9542     | 0.9484     | 0.9600     |
-
-Modelos disponibles en: https://huggingface.co/JuanC513
