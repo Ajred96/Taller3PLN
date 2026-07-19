@@ -2,13 +2,13 @@
 
 ## Integrantes
 
-| Integrante                  | Responsabilidad |
-|-----------------------------|----------------|
-| Anderson Johan Alban Angulo | Preprocesamiento y preparación de datasets |
-| Integrante 2                | Clasificación de sentimientos (TASS) |
-| Integrante 3                | Detección de sarcasmo |
-| Integrante 4                | NER CoNLL2002 |
-| Integrante 5                | NER Biomédico (Próstata) y evaluación |
+| Integrante                     | Responsabilidad |
+|--------------------------------|----------------|
+| Anderson Johan Alban Angulo    | Preprocesamiento y preparación de datasets |
+| Integrante 2                   | Clasificación de sentimientos (TASS) |
+| Cristian Camilo Llanos Alvarez | Detección de sarcasmo |
+| Jhoan Felipe Leon                   | NER CoNLL2002 |
+| Integrante 5                   | NER Biomédico (Próstata) y evaluación |
 
 ---
 
@@ -44,11 +44,24 @@ Taller3/
 │
 ├── outputs/
 │   ├── reports/
-│   └── figures/
+│   ├── figures/
+│   └── modelBetoSarcasmo/          
+│       ├── beto_bs8_best/
+│       ├── beto_bs16_best/
+│       └── beto_bs32_best/
 │
 ├── src/
 │   ├── config/
-│   └── preprocessing/
+│   ├── preprocessing/
+│   ├── train/
+│   │   └── sarcasmo/
+│   │       ├── train_beto_Bs8.py
+│   │       └── train_beto_Bs16.py
+│   └── predict/
+│       └── sarcasmo/
+│           ├── predictBeto8Bs8.py
+│           ├── predictBetoBs16.py
+│           └── predictBetoBs32.py
 │
 ├── requirements.txt
 └── README.md

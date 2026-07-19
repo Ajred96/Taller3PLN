@@ -1,6 +1,6 @@
 === VALIDACIÓN BIO: CONLL2002 ===
 
-Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\conll2002
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\conll2002
 
 
 --- Archivo: test.txt ---

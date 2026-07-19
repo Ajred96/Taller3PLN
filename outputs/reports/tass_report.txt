@@ -1,6 +1,6 @@
 === REPORTE DATASET TASS ===
 
-Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\tass
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\tass
 
 
 --- Archivo: cr-tass.csv ---

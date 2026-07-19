@@ -1,6 +1,6 @@
 === REPORTE DATASET SARCASMO ===
 
-Ruta: D:\Universidad\LenguajeNatrual\Taller3\data\raw\sarcasmo
+Ruta: D:\Univalle\2026-1\PLN\Taller3PLN\data\raw\sarcasmo
 
 
 --- Archivo: train.csv ---
